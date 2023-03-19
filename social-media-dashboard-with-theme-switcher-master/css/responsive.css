@@ -1,0 +1,42 @@
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        border: 1px solid orange;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .upper-header {
+        display: flex;
+        /* flex-direction: column; */
+        border: 1px solid red;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .upper-header-left {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .upper-header-right {
+        border: 1px solid yellow;
+        display: flex;
+        width: 100%;
+    }
+
+}

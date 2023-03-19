@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root{
+    --LimeGreen: hsl(163, 72%, 41%);  
+    --BrightRed: hsl(356, 69%, 56%);
+
+    /* dark Theam */
+
+    --VeryDarkBlueBG: hsl(230, 17%, 14%);
+    --VeryDarkBlueTopBGPattern: hsl(232, 19%, 15%);
+    --DarkDesaturatedBlueCardBG: hsl(228, 28%, 20%);
+    --DesaturatedBlueText: hsl(228, 34%, 66%);
+    --WhiteText: hsl(0, 0%, 100%);
+
+    /* light Theam */
+    --WhiteBG:hsl(0, 0%, 100%);
+    --VeryPaleBlueTopBGPattern:hsl(225, 100%, 98%);
+    --LightGrayishBlueCardBG: hsl(227, 47%, 96%);
+    --DarkGrayishBlueText: hsl(228, 12%, 44%);
+    --VeryDarkBlueText: hsl(230, 17%, 14%);
+}
+
+html
+{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--VeryDarkBlueBG);
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.upper-section {
+    /* border: 1px solid green; */
+}
+
+.upper-section .upper-header {
+    /* border: 1px solid black; */
+    height: 80px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-header .upper-header-left
+{
+   /* border: 1px solid red; */
+}
+.upper-header-left h1{
+   font-size: 1.5rem;
+   color: var(--WhiteText);
+}
+.upper-header-left p{
+   font-size: 0.75rem;
+   color: var(--DesaturatedBlueText);
+   font-weight: 700;
+}
+
+.upper-header .upper-header-right
+{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upper-header-right p
+{
+    font-size: 0.8rem;
+    display: flex;
+    color: var(--WhiteText);
+    margin-right: 10px;
+}
+
+.upper-section .upper-box-container
+{
+   /* border: 1px solid blue; */
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 20px;
+   flex-wrap: wrap;
+}
+
+.upper-box-container .upper-boxex
+{
+   /* border: 1px solid limegreen;     */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 220px;
+   min-width: 200px;
+   border-radius: 5px; 
+   position: relative;
+   background-color: var(--DarkDesaturatedBlueCardBG);
+   cursor: pointer;
+   margin-top: 20px;
+}
+
+.upper-box-container .upper-boxex:hover
+{
+    background-color: #333A56;
+}
+
+.upper-box-container .upper-boxex .gradient-border
+{
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.upper-box-container .upper-boxex .gb1{
+   background-color: hsl(208, 92%, 53%);
+}
+
+.upper-box-container .upper-boxex .gb2{
+    background-color: hsl(203, 89%, 53%);
+}
+
+.upper-box-container .upper-boxex #gb3{
+    background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.upper-box-container .upper-boxex .gb4{
+    background-color: hsl(348, 97%, 39%);
+}
+
+.upper-boxex div
+{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.upper-boxex > :first-child
+{
+    display: flex;
+    justify-content: center;
+}
+
+.upper-boxex div img{
+   margin-right: 10px;
+}
+
+.upper-boxex div p{
+    font-size: 0.7rem;
+}
+
+.upper-boxex div h1{
+   font-size: 3rem;   
+   margin: 0;
+}
+
+.upper-boxex .follow{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.upper-boxex .today
+{
+    padding: 15px 0px;
+}
+.upper-boxex .today p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-boxex .upper-box-info
+{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.upper-boxex .upper-box-info p{
+    color: var(--DesaturatedBlueText);
+    font-weight: 700;
+}
+
+.mid-box-info h1{
+   color: var(--WhiteText);
+}
+
+.mid-box-info p{
+    color: var(--DarkGrayishBlueText)
+}
+
+.lower-box-container .lower-boxex
+{
+    /* border: 1px solid limegreen; */
+}
+
+
+.lower-section {
+    /* border: 1px solid green; */
+}
+
+.lower-section .lower-header {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower-header h1
+{
+    font-size: 1.5rem;
+    color: var(--WhiteText);
+}
+
+.lower-section .lower-box-container
+{
+   /* border: 1px solid blue; */
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 20px;
+   flex-wrap: wrap;
+   padding-top: 10px;
+}
+
+.lower-box-container .lower-boxex
+{
+   /* border: 1px solid limegreen;     */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 220px;
+   min-width: 200px;
+   border-radius: 5px; 
+   position: relative;
+   margin-bottom: 20px;
+   cursor: pointer;
+   background-color: var(--DarkDesaturatedBlueCardBG);
+}
+
+.lower-boxex:hover
+{
+    background-color: #333A56;
+}
+
+.lower-boxex .upper-info
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 15px;
+}
+
+.lower-boxex .upper-info p
+{
+   font-size: 0.75rem;
+   font-weight: 500;
+   color: var(--DesaturatedBlueText);
+   font-weight: 800;
+}
+
+.lower-boxex .upper-info img
+{
+
+}
+
+.lower-boxex .lowerinfo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.lower-boxex .lowerinfo h2
+{
+    color: var(--WhiteText);
+}
+
+.lower-boxex .lowerinfo .value-in-percent
+{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
