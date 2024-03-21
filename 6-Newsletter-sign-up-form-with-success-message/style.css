@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Space Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MyFont;
+}
+
+.main-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+
+.main-cont .form {
+    /* border: 1px solid red; */
+    min-width: 200px;
+    width: 60%;
+    height: 100%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cont .form h1 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-family: var(--font2);
+    color: hsl(234, 29%, 20%);
+}
+
+.main-cont .form .desc {
+    margin-top: 2rem;
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.form .checkpoints {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.form .checkpoints div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0.4rem 0.4rem 0px;
+    color: hsl(234, 29%, 20%);
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+.form .checkpoints div img {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.form .input-frame {
+    /* border: 1px solid green; */
+    width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 40%;
+}
+
+.input-frame p {
+    font-family: var(--font2);
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.input-frame input {
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding-left: 8px;
+}
+
+.input-frame input:focus {
+    outline: none;
+}
+
+.input-frame button {
+    height: 40px;
+    background-color: hsl(234, 29%, 20%);
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-cont .image-frame {
+    position: relative;
+    height: 100%;
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.main-cont .image-frame img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.mobile {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card h1 {
+    font-weight: 800;
+    color: hsl(235, 18%, 26%);
+    margin: 1rem 0px;
+}
+
+.card p {
+    font-size: 0.8rem;
+}
+
+.card button {
+    width: 100%;
+    margin: 1rem 0px;
+    height: 40px;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .main-cont {
+        /* border: 1px solid blue; */
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .form {
+        /* border: 1px solid red; */
+        width: 100% !important;
+        padding: 1rem;
+        margin-left: 0 !important;
+    }
+
+    .image-frame {
+        /* border: 1px solid green; */
+        width: 100%;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .image-frame img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .input-frame {
+        width: 100% !important;
+        /* border: 1px solid purple; */
+    }
+
+    .attribution {
+        display: none;
+    }
+}

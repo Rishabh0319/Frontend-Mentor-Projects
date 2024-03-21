@@ -1,0 +1,22 @@
+# Angular
+/node_modules
+/dist
+/.ng_build
+/coverage
+*.log
+
+# Node.js
+npm-debug.log
+
+# TypeScript
+*.js
+*.map
+
+# JavaScript
+node_modules/
+*.log
+
+# React
+/node_modules
+/.idea
+.DS_Store
