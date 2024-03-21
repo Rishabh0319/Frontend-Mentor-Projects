@@ -1,0 +1,11 @@
+<div class="filter-frame" [ngStyle]="{display: filterList.length === 0 ? 'none' : 'flex' }">
+    <div class="option-container">
+        <button class="option-frame" *ngFor="let filter of filterList; let i = index">
+            <p>{{filter}}</p>
+            <div (click)="clearFilterOption(i)"><i class="fa-solid fa-x"></i></div>
+        </button>
+    </div>
+    <div class="clear-frame">
+        <a href="#" (click)="clearWholeFilter()">clear</a>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+.main-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .header {
+    /* border: 1px solid green; */
+    height: 156px;
+    width: 100%;
+    background-color: var(--Desaturated-Dark-Cyan-primary);
+    overflow: hidden;
+}
+
+.main-container .header img {
+    background-size: cover;
+}
+
+.main-container .card-container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 5rem 8rem;
+}
+
+
+/* *********** Media Queries ********** */
+
+@media(max-width: 650px) {
+    .card-container {
+        /* border: 1px solid blue; */
+        padding: 5rem 3rem !important;
+    }
+
+    .main-container .header {
+        /* border: 1px solid red; */
+        height: 100px;
+
+    }
+}

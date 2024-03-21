@@ -1,0 +1,26 @@
+<!-- Item Start -->
+<div class="card">
+    <div [ngClass]="cardData.featured ? 'card-featured-bar' :'card-featured-bar-disabled'"></div>
+    <div class="left-frame">
+        <div class="image-frame">
+            <img [src]="cardData.logo" alt="Photosnap">
+        </div>
+        <div class="info-frame">
+            <div class="company-name-info">
+                <p>{{cardData.company}}</p> <span [ngClass]="cardData.New ? 'new' : 'new-disabled'">New!</span> <span
+                    [ngClass]="cardData.featured ? 'featured' : 'featured-disabled'">Featured</span>
+            </div>
+            <div class="position-info">
+                <p>{{cardData.position}}</p>
+            </div>
+            <div class="time-info">
+                <p>{{cardData.postedAt}}</p>.<p>{{cardData.contract}}
+                </p>.<p>{{cardData.location}}</p>
+            </div>
+        </div>
+    </div>
+    <hr class="line" />
+    <div class="right-frame">
+        <span *ngFor="let language of cardData.languages" (click)="getLanguage(language)">{{language}}</span>
+    </div>
+</div>

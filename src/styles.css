@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --Desaturated-Dark-Cyan-primary: hsl(180, 29%, 50%);
+
+    --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+    /*(Filter Tablets)*/
+    --Light-Grayish-Cyan: hsl(180, 31%, 95%);
+    --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+    --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+
+
+    --font-family-my-type: "League Spartan", sans-serif;
+
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    transition: 0.3s;
+}

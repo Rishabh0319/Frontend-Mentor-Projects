@@ -1,0 +1,104 @@
+.filter-frame {
+    width: 80%;
+    /* border: 1px solid orangered; */
+    position: absolute;
+    top: 150px;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    border-radius: 0.4rem;
+    font-family: var(--font-family-my-type);
+    box-shadow: 0px 4px 12px var(--Desaturated-Dark-Cyan-primary);
+    background-color: #fff;
+
+    /* display: none; */
+}
+
+
+.filter-frame .option-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-frame .clear-frame a {
+    text-decoration: none;
+    color: var(--Desaturated-Dark-Cyan-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.filter-frame .clear-frame a:hover {
+    text-decoration: underline;
+}
+
+.filter-frame .option-frame {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0.2rem;
+    font-family: var(--font-family-my-type);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--Light-Grayish-Cyan-Background);
+    overflow: hidden;
+}
+
+.filter-frame .option-frame:hover {
+    cursor: pointer;
+}
+
+.option-frame p {
+    margin-right: 1rem;
+    color: var(--Desaturated-Dark-Cyan-primary);
+    font-family: var(--font-family-my-type);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.option-frame div {
+    background-color: var(--Dark-Grayish-Cyan);
+    padding: 0.5rem 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: var(--Desaturated-Dark-Cyan-primary);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.option-frame div:hover {
+    background-color: var(--Very-Dark-Grayish-Cyan);
+}
+
+
+@media(max-width: 650px) {
+    .filter-frame {
+        /* border: 1px solid red; */
+        padding: 0.6rem 0.8rem;
+        top: 100px;
+    }
+
+    .option-frame p {
+        font-size: 0.8rem;
+    }
+
+    .option-frame div {
+        /* border: 1px solid blue; */
+        font-size: 0.5rem !important;
+        padding: 0.3rem !important;
+    }
+
+    .filter-frame .clear-frame a {
+        font-size: 0.8rem;
+    }
+}
